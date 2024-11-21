@@ -349,7 +349,61 @@ function App() {
           />
         </section>
 
-        
+        <section className="flex flex-col justify-center min-h-[100vh] items-center py-4 mt-4">
+          <div className="mx-auto text-center  w-full items-center justify-between p-2 lg:px-4 space-y-8">
+            <h1 className="text-2xl font-bold">Exclusive Offers</h1>
+            <div className="grid grid-cols-3 gap-10 mx-auto max-w-7xl">
+              <article className="relative w-full overflow-hidden h-fit">
+                <span className="absolute left-0 px-2 bg-white rounded-full m-4">
+                  Up yo 55% Off
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1714386148315-2f0e3eebcd5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVkJTIwdmVsdmV0JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="image"
+                  className="w-full aspect-auto"
+                />
+                <span className="bg-gradient-to-t from-black to-transparent absolute h-[40vh]  left-0 bottom-0 w-full"></span>
+                <div className="absolute text-left bottom-5 p-8 text-white space-y-2">
+                  <h2 className="text-3xl font-bold">
+                    A bright spot: Budge-proof concealers
+                  </h2>
+                </div>
+              </article>
+              <article className="relative w-full overflow-hidden h-fit">
+                <span className="absolute left-0 px-2 bg-white rounded-full m-4">
+                  Up yo 55% Off
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1714386148315-2f0e3eebcd5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVkJTIwdmVsdmV0JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="image"
+                  className="w-full aspect-auto"
+                />
+                <span className="bg-gradient-to-t from-black to-transparent absolute h-[40vh]  left-0 bottom-0 w-full"></span>
+                <div className="absolute text-left bottom-5 p-8 text-white space-y-2">
+                  <h2 className="text-3xl font-bold">
+                    A bright spot: Budge-proof concealers
+                  </h2>
+                </div>
+              </article>
+              <article className="relative w-full overflow-hidden h-fit">
+                <span className="absolute left-0 px-2 bg-white rounded-full m-4">
+                  Up yo 55% Off
+                </span>
+                <img
+                  src="https://images.unsplash.com/photo-1714386148315-2f0e3eebcd5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cmVkJTIwdmVsdmV0JTIwY2FrZXxlbnwwfHwwfHx8MA%3D%3D"
+                  alt="image"
+                  className="w-full aspect-auto"
+                />
+                <span className="bg-gradient-to-t from-black to-transparent absolute h-[40vh]  left-0 bottom-0 w-full"></span>
+                <div className="absolute text-left bottom-5 p-8 text-white space-y-2">
+                  <h2 className="text-3xl font-bold">
+                    A bright spot: Budge-proof concealers
+                  </h2>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
       </div>
       <Footer />
     </>
