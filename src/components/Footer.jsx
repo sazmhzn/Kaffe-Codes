@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="mx-auto max-w-7xl  py-10 text-center md:text-left">
           <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {/* TW Elements section */}
-            <div className=" space-y-4">
-              <img src="/logo-inverted.svg" alt="" />
+            <div className="mx-auto space-y-4">
+              <img src="/logo-inverted.svg" alt="" className="mx-auto" />
 
               <p>
                 Kaffe Codes is the platform to run a successful online business
