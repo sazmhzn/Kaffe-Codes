@@ -47,7 +47,7 @@ function App() {
         <section className="bg-[#F3EEEA] py-4 mt-4">
           <div className="mx-auto max-w-7xl items-center justify-between p-2 lg:px-4 space-y-8">
             <h2 className="text-xl font-bold">Top Picks</h2>
-            <div className="grid grid-cols-5 gap-10 overflow-y-auto">
+            <div className="grid lg:grid-cols-5 grid-cols-2 gap-10 overflow-y-auto">
               {products
                 .filter((product) => product.id < 6)
                 .map((product) => (
@@ -67,7 +67,7 @@ function App() {
         <section className="flex flex-col justify-center min-h-[100vh] items-center py-4 mt-4">
           <div className="mx-auto text-center max-w-7xl items-center justify-between p-2 lg:px-4 space-y-8">
             <h1 className="text-2xl font-bold">Categories</h1>
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid lg:grid-cols-3 gap-6">
               <article className="relative  overflow-hidden h-fit">
                 <img
                   src={"/categories/01.png"}
@@ -111,7 +111,7 @@ function App() {
                 </div>
               </article>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-2 gap-6">
               <article className="relative  overflow-hidden h-fit">
                 <img
                   src={"/categories/04.png"}
@@ -326,7 +326,7 @@ function App() {
             </header>
           </div>
           <div className="w-3/4 flex items-center lg:justify-start justify-center">
-            <div className="grid-cols-3 grid gap-10">
+            <div className="lg:grid-cols-3 grid-cols-2 grid gap-10">
               {products
                 .filter((product, index) => index < 4)
                 .map((product) => (
@@ -352,7 +352,7 @@ function App() {
         <section className="flex flex-col justify-center min-h-[100vh] items-center py-4 mt-4">
           <div className="mx-auto text-center  w-full items-center justify-between p-2 lg:px-4 space-y-8">
             <h1 className="text-2xl font-bold">Exclusive Offers</h1>
-            <div className="grid grid-cols-3 gap-10 mx-auto max-w-7xl">
+            <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 mx-auto max-w-7xl">
               <article className="relative w-full overflow-hidden h-fit">
                 <span className="absolute left-0 px-2 bg-white rounded-full m-4">
                   Up yo 55% Off
