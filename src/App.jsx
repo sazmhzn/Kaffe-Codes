@@ -288,17 +288,16 @@ function App() {
         </section>
 
         <section className="flex flex-col justify-center min-h-[70vh] items-center py-4 mt-4">
-          <div className="mx-auto text-center items-center justify-between p-2 lg:px-4 space-y-8">
+          <div className="w-full flex flex-col text-center items-center justify-end p-2 lg:px-4 space-y-8 ">
             <header>
               <h1 className="text-3xl font-black">Coffee Selections</h1>
               <p>From Harvest to Happiness</p>
             </header>
           </div>
-          <div className="flex relative">
-            <img src="/faded-beans.png" alt="" className="absolute left-0" />
-            <div className="grid-2 grid">
+          <div className="w-3/4 flex items-center lg:justify-end justify-center">
+            <div className="grid-cols-2 grid gap-10">
               {products
-                .filter((product, index) => index < 3)
+                .filter((product, index) => index < 4)
                 .map((product) => (
                   <ProductCard
                     key={product.id}
@@ -311,7 +310,46 @@ function App() {
                 ))}
             </div>
           </div>
+
+          <img
+            src="/faded-beans.png"
+            alt=""
+            className="absolute left-0 mix-blend-multiply	"
+          />
         </section>
+
+        <section className="flex flex-col justify-center min-h-[70vh] items-center py-4 mt-4">
+          <div className="w-full flex flex-col  text-center items-center justify-end p-6 lg:px-4 space-y-12 ">
+            <header>
+              <h1 className="text-3xl font-black">Tea Selections</h1>
+              <p>Every Sip Tells a Journey</p>
+            </header>
+          </div>
+          <div className="w-3/4 flex items-center lg:justify-start justify-center">
+            <div className="grid-cols-3 grid gap-10">
+              {products
+                .filter((product, index) => index < 4)
+                .map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    img={product.img}
+                    name={product.name}
+                    brand={product.brand}
+                    rating={product.rating}
+                    price={product.price}
+                  />
+                ))}
+            </div>
+          </div>
+
+          <img
+            src="/faded-beans2.png"
+            alt=""
+            className="absolute right-0 mix-blend-multiply	"
+          />
+        </section>
+
+        
       </div>
       <Footer />
     </>
