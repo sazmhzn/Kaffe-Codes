@@ -61,13 +61,43 @@ export const categoryImages = [
 ];
 
 export const categories = [
-  { icon: "/icons/bakery.png", title: "Bakery", active: true },
-  { icon: "/icons/coffee.png", title: "Coffee", active: false },
-  { icon: "/icons/tea.png", title: "Tea", active: false },
-  { icon: "/icons/utensils.png", title: "Utensils", active: false },
-  { icon: "/icons/machineries.png", title: "Machineries", active: false },
-  { icon: "/icons/cake.png", title: "Cakes", active: false },
-  { icon: "/icons/brownies.png", title: "Brownies", active: false },
+  {
+    icon: "/icons/bakery.png",
+    title: "Bakery",
+    category: "Food",
+    active: true,
+  },
+  {
+    icon: "/icons/coffee.png",
+    title: "Coffee",
+    category: "Beverages",
+    active: false,
+  },
+  {
+    icon: "/icons/tea.png",
+    title: "Tea",
+    category: "Beverages",
+    active: false,
+  },
+  {
+    icon: "/icons/utensils.png",
+    title: "Utensils",
+    category: "Machineries",
+    active: false,
+  },
+  {
+    icon: "/icons/machineries.png",
+    title: "Machineries",
+    category: "Machineries",
+    active: false,
+  },
+  { icon: "/icons/cake.png", title: "Cakes", category: "Food", active: false },
+  {
+    icon: "/icons/brownies.png",
+    title: "Brownies",
+    category: "Food",
+    active: false,
+  },
 ];
 
 export const products = [

@@ -256,14 +256,16 @@ function App() {
               </h1>
             </header>
             <div className="mx-auto py-4 w-full max-w-7xl flex items-center justify-center gap-8 overflow-y-auto">
-              {categories.map((category) => (
-                <Icons
-                  key={category.title}
-                  icon={category.icon}
-                  title={category.title}
-                  active={category.active}
-                />
-              ))}
+              {categories
+                .filter((cate) => cate.category === "Machineries")
+                .map((category) => (
+                  <Icons
+                    key={category.title}
+                    icon={category.icon}
+                    title={category.title}
+                    active={category.active}
+                  />
+                ))}
             </div>
 
             <section>
@@ -282,6 +284,32 @@ function App() {
                   ))}
               </div>
             </section>
+          </div>
+        </section>
+
+        <section className="flex flex-col justify-center min-h-[70vh] items-center py-4 mt-4">
+          <div className="mx-auto text-center items-center justify-between p-2 lg:px-4 space-y-8">
+            <header>
+              <h1 className="text-3xl font-black">Coffee Selections</h1>
+              <p>From Harvest to Happiness</p>
+            </header>
+          </div>
+          <div className="flex relative">
+            <img src="/faded-beans.png" alt="" className="absolute left-0" />
+            <div className="grid-2 grid">
+              {products
+                .filter((product, index) => index < 3)
+                .map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    img={product.img}
+                    name={product.name}
+                    brand={product.brand}
+                    rating={product.rating}
+                    price={product.price}
+                  />
+                ))}
+            </div>
           </div>
         </section>
       </div>

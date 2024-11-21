@@ -10,7 +10,7 @@ const Icons = ({ icon, title, active }) => {
           src={icon}
           alt="icon"
           className={`w-full ${
-            active ? "text-white invert-0 fill-white bg-white" : "text-black"
+            active ? "text-white brightness-[10]" : "text-black"
           }`}
         />
       </div>
